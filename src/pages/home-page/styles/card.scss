@@ -1,0 +1,106 @@
+@import "/src/global-styles/styles/root.scss";
+
+.c-card {
+   max-width: 343px;
+   margin: 16px;
+   border-radius: var(--border-radius);
+   overflow: hidden;
+   text-align: center;
+   background-color: var(--color-white);
+
+   & &__deco-element {
+      height: 188px;
+      background: url(/public/images/music-girl.png) no-repeat center/150%;
+   }
+
+   & &__content {
+      display: grid;
+      justify-items: center;
+      padding: 24px 16px;
+
+   }
+
+   & &__header {
+      margin-block: 16px;
+   }
+
+   & &__info {
+      line-height: var(--line-height-large);
+   }
+
+   & &__plan {
+      width: 100%;
+      margin-block: 32px;
+      padding: 16px 24px 16px 20px;
+      background-color: var(--color-background);
+      border-radius: var(--border-radius);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+   }
+
+   & &__plan-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 20px;
+   }
+
+   & &__plan-info {
+      padding-left: 24px;
+      border-left: var(--stroke) solid var(--color-stroke);
+      text-align: left;
+   }
+
+   & &__plan-price {
+      margin-top: 2px;
+      font-size: var(--font-size-body2);
+   }
+
+   & &__link {
+      color: var(--color-primary);
+      text-underline-offset: 2px;
+
+      &:hover {
+         color: var(--color-button-hover);
+      }
+
+      &:active {
+         color: var(--color-button-active);
+      }
+   }
+
+   & &__link--dark {
+      color: var(--color-title);
+   }
+
+   & &__button {
+      width: 100%;
+      padding-block: 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: var(--border-radius);
+      background-color: var(--color-primary);
+      color: var(--color-white);
+
+      &:hover {
+         background-color: var(--color-button-hover);
+      }
+
+      &:active {
+         background-color: var(--color-button-active);
+      }
+   }
+
+   @media screen and (min-width: $desktop) {
+      width: 460px;
+      max-width: 460px;
+
+      & &__deco-element {
+         background-size: 110%;
+         height: 232px;
+      }
+
+      & &__info {
+         max-width: 349px;
+      }
+   }
+}
