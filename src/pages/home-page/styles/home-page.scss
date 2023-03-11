@@ -1,0 +1,57 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+@import "/src/pages/home-page/styles/card.scss";
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+#home-page {
+   font-family: var(--font-family), sans-serif;
+   letter-spacing: var(--letter-spacing-body);
+   font-weight: var(--font-weight-medium);
+   font-size: var(--font-size-body1);
+   color: var(--color-title);
+   background-color: var(--color-background);
+
+   min-height: 100vh;
+   display: grid;
+   place-items: center;
+}
+
+h1,
+h2 {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-header);
+  line-height: var(--line-height-normal);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+p {
+  color: var(--color-body)
+}
+
+a,
+button {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-large);
+}
+
+a {
+  font-size: var(--font-size-link);
+}
+
+button {
+  font-size: var(--font-size-button);
+}
